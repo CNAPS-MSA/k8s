@@ -1,0 +1,17 @@
+{
+  "generator-jhipster": {
+    "appsFolders": ["book", "bookCatalog", "gateway", "rental"],
+    "directoryPath": "../",
+    "clusteredDbApps": ["bookCatalog"],
+    "serviceDiscoveryType": "eureka",
+    "jwtSecretKey": "YTljZDQxZjFlZjBhODEwOGI5Y2Y1MzhiOWVhN2Q3Yzc3YzE2N2QyNmQ5NmFmNzIxMDA2YWIxYzcwMmNmZTdkZDIyN2ViNzU0MjBiMDU2ODZiZDZmYWRkZjcwMzQ5YmUxODMzZg==",
+    "dockerRepositoryName": "gcr.io/cnaps-project",
+    "dockerPushCommand": "docker push",
+    "kubernetesNamespace": "default",
+    "kubernetesServiceType": "LoadBalancer",
+    "kubernetesUseDynamicStorage": false,
+    "ingressDomain": "",
+    "monitoring": "no",
+    "istio": false
+  }
+}

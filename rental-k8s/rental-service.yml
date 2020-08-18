@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: rental
+  namespace: default
+  labels:
+    app: rental
+spec:
+  selector:
+    app: rental
+  ports:
+    - name: http
+      port: 8083

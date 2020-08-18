@@ -1,0 +1,21 @@
+apiVersion: skaffold/v1
+kind: Config
+build:
+  artifacts:
+    - image: gcr.io/cnaps-project/book
+      context: ../book
+      jib: {}
+    - image: gcr.io/cnaps-project/bookcatalog
+      context: ../bookCatalog
+      jib: {}
+    - image: gcr.io/cnaps-project/gateway
+      context: ../gateway
+      jib: {}
+    - image: gcr.io/cnaps-project/rental
+      context: ../rental
+      jib: {}
+  tagPolicy:
+    envTemplate:
+      template: '{{.IMAGE_NAME}}:latest'
+deploy:
+  kustomize: {}

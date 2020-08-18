@@ -1,0 +1,24 @@
+commonLabels:
+  app.kubernetes.io/genereted-by: JHipster
+
+resources:
+  # Individual apps
+  - book-k8s/book-deployment.yml
+  - book-k8s/book-service.yml
+  - book-k8s/book-mariadb.yml
+  - bookcatalog-k8s/bookcatalog-deployment.yml
+  - bookcatalog-k8s/bookcatalog-service.yml
+  - bookcatalog-k8s/bookcatalog-mongodb.yml
+  - gateway-k8s/gateway-deployment.yml
+  - gateway-k8s/gateway-service.yml
+  - gateway-k8s/gateway-mariadb.yml
+  - rental-k8s/rental-deployment.yml
+  - rental-k8s/rental-service.yml
+  - rental-k8s/rental-mariadb.yml
+  # messagebroker
+  - messagebroker-k8s/kafka.yml
+  # service discovery eureka/consul
+  - registry-k8s/jhipster-registry.yml
+  - registry-k8s/application-configmap.yml
+
+patchesJson6902:

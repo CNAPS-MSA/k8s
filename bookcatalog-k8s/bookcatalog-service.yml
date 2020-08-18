@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: bookcatalog
+  namespace: default
+  labels:
+    app: bookcatalog
+spec:
+  selector:
+    app: bookcatalog
+  ports:
+    - name: http
+      port: 8082
